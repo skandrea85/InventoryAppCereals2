@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/top"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/product" />
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_name_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_name"
+                android:inputType="textCapWords" />
+            <!-- Breed field -->
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_quantity"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Gender category -->
+
+
+    <!-- Label -->
+    <!-- Measurement category -->
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/width"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:text="@string/price" />
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <!-- Weight field -->
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price"
+                android:inputType="number" />
+
+            <!-- Units for weight (kg) -->
+            <TextView
+                android:id="@+id/label_weight_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/right"
+                android:paddingTop="@dimen/fab_margin"
+                android:text="@string/euro" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/partner" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_name_partner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_partner"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_Partner_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/partner_contact"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Inventory App Cereals</string>
+    <string name="title_activity_editor">EditorActivity</string>
+    <string name="action_delete">Delete</string>
+    <string name="product">Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="price">Price</string>
+    <string name="partner">Partner</string>
+    <string name="name_partner">Name Partner</string>
+    <string name="partner_contact">Partner Contact</string>
+    <string name="insert_product">Insert Product</string>
+    <string name="delete_all_product">Delete all Product</string>
+    <string name="action_save">action_save</string>
+    <string name="euro">€</string>
+</resources>
+
